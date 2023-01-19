@@ -1,0 +1,12 @@
+************* Module validation
+validation.py:49:0: C0301: Line too long (114/100) (line-too-long)
+validation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+validation.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+validation.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+validation.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
+validation.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+validation.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.70/10, -0.13)
+
