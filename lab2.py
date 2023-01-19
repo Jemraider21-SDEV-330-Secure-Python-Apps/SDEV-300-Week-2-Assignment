@@ -72,6 +72,13 @@ def law_of_cosines():
     return side_c
 
 
+def volume_right_circular_cylinder() -> float:
+    radius: float = validate_is_number("Radius", number_type="float")
+    height: float = validate_is_number("Height", number_type="float")
+    volume: float = math.pi * math.pow(radius, 2) * height
+    return volume
+
+
 def main():
     print("Welcome to the program!\n")
     menu_loop = True
@@ -95,7 +102,9 @@ def main():
                     print("\nUsing the law of cosine")
                     print(f'The length of Side C: {law_of_cosines()}\n')
                 case 5:
-                    print("\nCalculating volume\n")
+                    print("\nCalculating Volume of a Right Circular Cylinder")
+                    print(
+                        f'The volume of the right circular cylinder: {volume_right_circular_cylinder()}\n')
                 case 6:
                     menu_loop = False
         except InvalidInputException as exception:
