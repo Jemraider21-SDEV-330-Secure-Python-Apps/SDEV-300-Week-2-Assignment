@@ -1,3 +1,6 @@
+from datetime import date, timedelta
+import datetime
+import math
 import random
 import string
 from validation import InvalidInputException, validate_is_number, validate_is_boolean
@@ -51,6 +54,24 @@ def calculate_format_percentage() -> float:
     return round(result, decimal)
 
 
+def days_until_july_4_2025() -> int:
+    today: date = datetime.date.today()
+    future: date = datetime.date(2025, 7, 4)
+    difference: timedelta = future - today
+    return difference.days
+
+
+def law_of_cosines():
+    side_a: float = validate_is_number("Side A", number_type="float")
+    side_b: float = validate_is_number("Side B", number_type="float")
+    angle_c: float = validate_is_number("Angle C", number_type="float")
+
+    power_calcs = math.pow(side_a, 2) + math.pow(side_b, 2)
+    cosine_cals = 2 * side_a * side_b * math.cos(angle_c)
+    side_c: float = math.sqrt(power_calcs - cosine_cals)
+    return side_c
+
+
 def main():
     print("Welcome to the program!\n")
     menu_loop = True
@@ -67,11 +88,14 @@ def main():
                     print(
                         f'The calculated percentage: {calculate_format_percentage()} \n')
                 case 3:
-                    print("Days until july 4 2025\n")
+                    print("\nDays until july 4 2025")
+                    print(
+                        f'There are {days_until_july_4_2025()} days until July 4, 2025\n')
                 case 4:
-                    print("Using the law of cosine\n")
+                    print("\nUsing the law of cosine")
+                    print(f'The length of Side C: {law_of_cosines()}\n')
                 case 5:
-                    print("calculating volume\n")
+                    print("\nCalculating volume\n")
                 case 6:
                     menu_loop = False
         except InvalidInputException as exception:
