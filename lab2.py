@@ -65,7 +65,9 @@ def generate_password():
     use_specials = validate_is_boolean(
         "boolean for special characters", additional_info)
 
-    if all([use_lowercase, use_uppercase, use_numbers, use_specials]) == False:
+    all_false_input = not any(
+        [use_lowercase, use_uppercase, use_numbers, use_specials])
+    if all_false_input:
         characters = string.ascii_letters
     else:
         characters = adding_characters(

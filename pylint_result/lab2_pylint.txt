@@ -1,6 +1,4 @@
-************* Module lab2
-lab2.py:68:7: C0121: Comparison 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) == False' should be 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) is False' if checking for the singleton value False, or 'not all([use_lowercase, use_uppercase, use_numbers, use_specials])' if testing for falsiness (singleton-comparison)
 
-------------------------------------------------------------------
-Your code has been rated at 9.88/10 (previous run: 9.02/10, +0.85)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.88/10, +0.12)
 

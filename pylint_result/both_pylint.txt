@@ -1,5 +1,3 @@
-************* Module lab2
-lab2.py:68:7: C0121: Comparison 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) == False' should be 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) is False' if checking for the singleton value False, or 'not all([use_lowercase, use_uppercase, use_numbers, use_specials])' if testing for falsiness (singleton-comparison)
 ************* Module validation
 validation.py:49:0: C0301: Line too long (114/100) (line-too-long)
 validation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
@@ -10,5 +8,5 @@ validation.py:32:0: C0116: Missing function or method docstring (missing-functio
 validation.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.39/10 (previous run: 8.57/10, +0.82)
+Your code has been rated at 9.47/10 (previous run: 8.57/10, +0.90)
 

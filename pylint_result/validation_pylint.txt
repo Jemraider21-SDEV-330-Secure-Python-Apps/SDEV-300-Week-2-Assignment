@@ -8,5 +8,5 @@ validation.py:32:0: C0116: Missing function or method docstring (missing-functio
 validation.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.57/10 (previous run: 8.70/10, -0.13)
+Your code has been rated at 8.57/10 (previous run: 9.39/10, -0.82)
 
