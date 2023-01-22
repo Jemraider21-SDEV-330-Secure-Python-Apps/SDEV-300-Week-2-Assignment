@@ -1,15 +1,6 @@
 ************* Module lab2
-lab2.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-lab2.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:44:7: C0121: Comparison 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) == False' should be 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) is False' if checking for the singleton value False, or 'not all([use_lowercase, use_uppercase, use_numbers, use_specials])' if testing for falsiness (singleton-comparison)
-lab2.py:58:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:67:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:75:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:87:0: C0116: Missing function or method docstring (missing-function-docstring)
-lab2.py:95:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab2.py:68:7: C0121: Comparison 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) == False' should be 'all([use_lowercase, use_uppercase, use_numbers, use_specials]) is False' if checking for the singleton value False, or 'not all([use_lowercase, use_uppercase, use_numbers, use_specials])' if testing for falsiness (singleton-comparison)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.78/10 (previous run: 8.78/10, +0.00)
+Your code has been rated at 9.88/10 (previous run: 9.02/10, +0.85)
 

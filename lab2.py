@@ -1,3 +1,9 @@
+"""Jared Morris's Lab 2 Submission for SDEV 300
+
+Returns:
+    none
+"""
+
 from datetime import date, timedelta
 import datetime
 import math
@@ -7,6 +13,11 @@ from validation import validate_is_number, validate_is_boolean
 
 
 def menu() -> int:
+    """Display the menu for user selection, and prompt for input from the user
+
+    Returns:
+        int: The user menu selection
+    """
     print("1. Generate Secure Password")
     print("2. Calculate And Format A Percentage")
     print("3. How Many Days Until July 4, 2025?")
@@ -23,11 +34,24 @@ def menu() -> int:
     return user_input
 
 
-def adding_characters(characters: str, use: bool, to_add: str) -> str:
-    return characters + to_add if use else characters
+def adding_characters(characters: str, to_use: bool, to_add: str) -> str:
+    """Concatenates a new string to an existing set of characters if the user selects to use them
+
+    Args:
+        characters (str): The base set of characters to use
+        to_use (bool): User selection for whether to join the two strings together
+        to_add (str): the characters to add to the original set of characters
+
+    Returns:
+        str: The set of valid characters to use when creating a password
+    """
+    return characters + to_add if to_use else characters
 
 
 def generate_password():
+    """Generates a random password based on the user selection, and print it out.
+    This can include lower case letters, upper case letters, numbers, and special characters.
+    """
     print("\nGenerating secure password")
     characters: str = ""
     additional_info = "True/False"
@@ -56,6 +80,9 @@ def generate_password():
 
 
 def calculate_format_percentage():
+    """Calculates and print the formatted percentage based on user input.
+    Collects a numerator, denominator, and decimal points for formatting.
+    """
     print("\nCalculating and formating a percentage")
     numerator: int = validate_is_number("Numerator")
     denominator: int = validate_is_number("Denominator")
@@ -64,7 +91,9 @@ def calculate_format_percentage():
     print(f'The calculated percentage: {round(result, decimal)} \n')
 
 
-def days_until_july_4_2025() -> int:
+def days_until_july_4_2025():
+    """Calculate how many days between today's date and July 4, 2025
+    """
     print("\nDays until july 4 2025")
     today: date = datetime.date.today()
     future: date = datetime.date(2025, 7, 4)
@@ -73,6 +102,9 @@ def days_until_july_4_2025() -> int:
 
 
 def law_of_cosines():
+    """Use the law of cosines to calculate the length of side C of a triangle.
+    Collects the length of side A, side B, and angle C from the user.
+    """
     print("\nUsing the law of cosine")
     side_a: float = validate_is_number("Side A", number_type="float")
     side_b: float = validate_is_number("Side B", number_type="float")
@@ -85,6 +117,9 @@ def law_of_cosines():
 
 
 def volume_right_circular_cylinder():
+    """Calulates the volume of a right circular cylinder based on user input.
+    Collects the radius and the height of the cylinder
+    """
     print("\nCalculating Volume of a Right Circular Cylinder")
     radius: float = validate_is_number("Radius", number_type="float")
     height: float = validate_is_number("Height", number_type="float")
@@ -93,6 +128,10 @@ def volume_right_circular_cylinder():
 
 
 def main():
+    """Main driver of the program.
+    Prompts the user for a menu selection, then performs said menu action.
+    Repeats until the user selects to exit the program.
+    """
     print("Welcome to the program!\n")
     menu_loop = True
     while menu_loop:

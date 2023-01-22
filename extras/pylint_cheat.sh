@@ -10,7 +10,6 @@ fi
 lab2="lab2"
 validation="validation"
 
-
 # Check to see if lab 2's report exist. Create if no. Then perform pylint
 lab2_py="$lab2.py"
 lab2_report="$dir/${lab2}_pylint.txt"
@@ -30,6 +29,7 @@ if [ ! -f "$validation_result" ]; then
 fi
 pylint $validation_py > $validation_result
 
+
 # Pylint both lab2.py and validation.py and output to file
 both="$dir/both_pylint.txt"
 echo "Adding pylint result for botyh $lab2_py and $validation_py - $both"
@@ -37,6 +37,7 @@ if [ ! -f "$both" ]; then
     touch $both
 fi
 pylint $lab2_py $validation_py > $both
+
 
 # Done doing stuff. Exit
 echo "Done"
