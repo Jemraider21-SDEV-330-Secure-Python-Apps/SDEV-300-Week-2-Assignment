@@ -46,7 +46,8 @@ def validate_is_boolean(input_name: str, additional_info: str = ""):
     return user_input
 
 
-def validate_is_number(input_name: str, additional_info: str = "", number_type: str = "int") -> Union[int, float]:
+def validate_is_number(input_name: str, additional_info: str = "",
+                       number_type: str = "int") -> Union[int, float]:
     user_input: int = 0
     looper: bool = True
     match number_type:
